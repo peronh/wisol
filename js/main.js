@@ -14,7 +14,7 @@ jQuery(document).ready(function ($) {
       $('#header').removeClass('header-fixed');
       $('#header #logo img').css('width','300px');
       $('.nav-menu a').css('color', '#8db600');
-        $('#mobile-nav-toggle i').css('color', '#8db600');
+      $('#mobile-nav-toggle i').css('color', '#8db600');
     }
   });
   $('.back-to-top').click(function () {
@@ -158,7 +158,7 @@ jQuery(document).ready(function ($) {
 
     /*#region responsive code begin*/
 
-    var MAX_WIDTH = 1920;
+    var MAX_WIDTH = 10000;
      //var MAX_HEIGHT = 10000;
     // var MAX_BLEEDING = 1;
 
@@ -167,13 +167,13 @@ jQuery(document).ready(function ($) {
     //     var containerWidth = containerElement.clientWidth;
     //
     //     if (containerWidth) {
-    //         var originalWidth = jssor_1_slider.$OriginalWidth();
-    //         var originalHeight = jssor_1_slider.$OriginalHeight();
+    //         // var originalWidth = jssor_1_slider.$OriginalWidth();
+    //         // var originalHeight = jssor_1_slider.$OriginalHeight();
     //
-    //         var containerHeight = containerElement.clientHeight || originalHeight;
+    //       //  var containerHeight = containerElement.clientHeight || originalHeight;
     //
     //         var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
-    //         var expectedHeight = Math.min(MAX_HEIGHT || containerHeight, containerHeight);
+    //         //var expectedHeight = Math.min(MAX_HEIGHT || containerHeight, containerHeight);
     //
     //         //constrain bullets, arrows inside slider area, it's optional, remove it if not necessary
     //         // if (MAX_BLEEDING >= 0 && MAX_BLEEDING < 1) {
@@ -187,14 +187,15 @@ jQuery(document).ready(function ($) {
     //         //     expectedHeight = Math.min(expectedHeight, originalHeight * maxScaleRatio);
     //         // }
     //
-    //         jssor_1_slider.$ScaleSize(expectedWidth, expectedHeight, MAX_BLEEDING);
-    //         jssor_1_slider.$Elmt.style.top = ((containerHeight - expectedHeight) / 2) + "px";
-    //         jssor_1_slider.$Elmt.style.left = ((containerWidth - expectedWidth) / 2) + "px";
+    //         // jssor_1_slider.$ScaleSize(expectedWidth, expectedHeight, MAX_BLEEDING);
+    //         // jssor_1_slider.$Elmt.style.top = ((containerHeight - expectedHeight) / 2) + "px";
+    //         // jssor_1_slider.$Elmt.style.left = ((containerWidth - expectedWidth) / 2) + "px";
     //     }
     //     else {
     //         window.setTimeout(ScaleSlider, 30);
     //     }
     // }
+
     function ScaleSlider() {
         var containerElement = jssor_1_slider.$Elmt.parentNode;
         var containerWidth = containerElement.clientWidth;

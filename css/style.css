@@ -1,12 +1,4 @@
-/*
-  Theme Name: Regna
-  Theme URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
-  Author: BootstrapMade.com
-  License: https://bootstrapmade.com/license/
-*/
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Poppins');
 body {
   background: #fff;
   color: #666666;
@@ -148,13 +140,32 @@ header#header {
   transition: all 0.5s;
 }
 
+::-webkit-scrollbar {
+  width: 14px;
+}
 
-/*#slide-1 {*/
-    /*background-image: url("/img/wisol/wisol_banner_start_big-1920_2_default.png");*/
-    /*background-size: contain;*/
-    /*background-repeat: no-repeat;*/
-    /*background-position: center;*/
-/*}*/
+::-webkit-scrollbar:hover {
+  width: 18px;
+}
+
+.hover {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 1px 1px 5px grey;
+  box-shadow: inset 1px 1px 5px grey;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(141, 182, 0, 0.6);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(141, 182, 0);
+}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -322,7 +333,7 @@ header#header {
   display: inline-block;
   color: #8db600;
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   text-transform: uppercase;
   font-size: 13px;
   outline: none;
@@ -414,12 +425,12 @@ header#header {
 #mobile-nav {
   position: fixed;
   top: 0;
-  padding-top: 18px;
+  padding-top: 50px;
   bottom: 0;
   z-index: 998;
   background-color: rgb(141, 182, 0);
-  left: -260px;
-  width: 260px;
+  left: -80%;
+  width: 80%;
   overflow-y: auto;
   transition: 0.4s;
 }
@@ -436,7 +447,8 @@ header#header {
 
 #mobile-nav ul li a {
   color: #fff;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 400;
   overflow: hidden;
   padding: 10px 22px 10px 15px;
   position: relative;
@@ -540,7 +552,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #services {
   background: #fff;
   background-size: cover;
-  padding: 80px 0 60px 0;
+  padding: 10px 0 60px 0;
 }
 
 #services .box {
@@ -606,6 +618,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 #services .description {
   font-size: 14px;
   line-height: 24px;
+}
+@media (max-width: 1199.99px) {
+  #services .box {
+    height: auto;
+  }
 }
 
 /* Call To Action Section
